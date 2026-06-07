@@ -30,7 +30,7 @@ button{font-family:'Inter',sans-serif;cursor:pointer}.container{max-width:1200px
 .nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.97);backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,32,159,.08);box-shadow:0 2px 20px rgba(7,27,58,.06);transition:var(--tr)}
 .nav-in{max-width:1400px;margin:0 auto;padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;height:70px}
 .logo{display:flex;align-items:center;gap:12px;cursor:pointer}
-.logo-m{width:46px;height:46px;border-radius:11px;background:linear-gradient(135deg,var(--bl),var(--rd));display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:15px;font-family:'Playfair Display',serif}
+.logo-m{height:46px;width:auto;border-radius:8px;object-fit:contain;display:block}
 .logo-n{font-family:'Playfair Display',serif;font-weight:700;font-size:15px;color:var(--nv);line-height:1.2;display:block}
 .logo-s{font-size:9.5px;color:var(--gd);font-weight:700;letter-spacing:.12em;text-transform:uppercase;display:block}
 .nl{display:flex;align-items:center;gap:2px;list-style:none}
@@ -315,7 +315,7 @@ select.fc{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns=
 <nav class="nav" id="nav">
 <div class="nav-in">
   <div class="logo" onclick="go('accueil')">
-    <div class="logo-m">KPC</div>
+    <img class="logo-m" src="/images/logo.jpeg" alt="KPC Logo">
     <div><span class="logo-n">Konviksyon Pou Chanjman</span><span class="logo-s">Mouvement Citoyen Haïtien</span></div>
   </div>
   <ul class="nl">
@@ -918,7 +918,7 @@ select.fc{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns=
   <div class="fg4">
     <div>
       <div class="flw">
-        <div class="logo-m">KPC</div>
+        <img class="logo-m" src="/images/logo.jpeg" alt="KPC Logo" style="height:46px;border-radius:8px;filter:brightness(1.05)">
         <div><span class="logo-n" style="color:#fff">Konviksyon Pou Chanjman</span><span class="logo-s">Mouvement Citoyen Haïtien</span></div>
       </div>
       <p class="fmi">Konviksyon Pou Chanjman n'est pas seulement un parti politique. C'est un mouvement citoyen conçu pour organiser, éduquer, mobiliser et reconstruire la confiance dans l'avenir d'Haïti.</p>
