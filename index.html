@@ -5,11 +5,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>KPC — Konviksyon Pou Chanjman | Mouvement Citoyen Haïtien</title>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <style>
 :root{--bl:#00209F;--rd:#D21034;--wh:#fff;--gd:#D4AF37;--gr:#F7F8FA;--nv:#071B3A;--bl2:#E8EEFF;--sh:0 4px 24px rgba(7,27,58,.08);--sh2:0 12px 40px rgba(7,27,58,.15);--ra:16px;--tr:all .3s cubic-bezier(.4,0,.2,1)}
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+  <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 body{font-family:'Inter',sans-serif;color:var(--nv);overflow-x:hidden;background:#fff}
 h1,h2,h3,h4{font-family:'Playfair Display',serif}a{text-decoration:none;color:inherit}
 button{font-family:'Inter',sans-serif;cursor:pointer}.container{max-width:1200px;margin:0 auto;padding:0 2rem}
